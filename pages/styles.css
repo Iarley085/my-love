@@ -60,7 +60,7 @@ p {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Forma de coração */
     position: absolute; /* MUITO IMPORTANTE: Permite posicionar a imagem livremente */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Uma sombra sutil */
-    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+    transition: transform 0.1s ease; /* Animação suave ao passar o mouse */
     z-index: -1; /* Opcional: Coloca as fotos atrás do conteúdo principal para não atrapalhar a leitura do contador */
 }
 

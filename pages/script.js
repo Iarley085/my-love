@@ -77,3 +77,24 @@ function atualizarContador() {
 // Atualiza o contador imediatamente e depois a cada segundo
 atualizarContador();
 setInterval(atualizarContador, 1000); // Atualiza a cada 1 segundo (1000 milissegundos)
+
+
+// ... seu código JavaScript existente para o contador ...
+
+function posicionarFotos() {
+    const fotos = document.querySelectorAll('.foto-coracao');
+    fotos.forEach(foto => {
+        // Gera posições aleatórias dentro da largura e altura da janela
+        // O -150 é para garantir que a foto inteira esteja visível (já que a largura/altura da foto é 150px)
+        const x = Math.random() * (window.innerWidth - 150);
+        const y = Math.random() * (window.innerHeight - 150);
+        foto.style.left = x + 'px';
+        foto.style.top = y + 'px';
+    });
+}
+
+// Chama a função quando a página carrega e quando a janela é redimensionada
+window.addEventListener('load', posicionarFotos);
+window.addEventListener('resize', posicionarFotos);
+
+// ... restante do seu JavaScript para o contador ...

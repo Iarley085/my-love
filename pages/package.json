@@ -2,7 +2,7 @@
   "name": "my-love",
   "version": "1.0.0",
   "description": "surpresa, dia dos namorados",
-  "main": "script.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

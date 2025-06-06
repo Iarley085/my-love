@@ -65,18 +65,3 @@ function atualizarContador() {
 atualizarContador();
 setInterval(atualizarContador, 1000);
 
-
-
-/* function posicionarFotos() {
-    const fotos = document.querySelectorAll('.foto-coracao');
-    fotos.forEach(foto => {
-
-        const x = Math.random() * (window.innerWidth - 150);
-        const y = Math.random() * (window.innerHeight - 150);
-        foto.style.left = x + 'px';
-        foto.style.top = y + 'px';
-    });
-} */
-
-window.addEventListener('load', posicionarFotos);
-window.addEventListener('resize', posicionarFotos);

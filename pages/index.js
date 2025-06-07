@@ -1,3 +1,7 @@
+function home (){
+}
+export default home;
+
 const dataInicioNamoro = new Date(2023, 3, 7, 0o0, 0o7, 0);
 
 const anosSpan = document.getElementById('anos');

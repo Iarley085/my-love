@@ -1,9 +1,4 @@
-function home (){
-}
-export default home;
-
 const dataInicioNamoro = new Date(2023, 3, 7, 0o0, 0o7, 0);
-
 const anosSpan = document.getElementById('anos');
 const mesesSpan = document.getElementById('meses');
 const diasSpan = document.getElementById('dias');
@@ -24,11 +19,9 @@ dataInicioTextoSpan.textContent = dataInicioNamoro.toLocaleDateString('pt-BR', {
     minute: '2-digit'
 });
 
-
 function atualizarContador() {
     const agora = new Date();
-    const diferencaMs = agora.getTime() - dataInicioNamoro.getTime(); // Diferença em milissegundos
-
+    const diferencaMs = agora.getTime() - dataInicioNamoro.getTime();
     const segundosTotais = Math.floor(diferencaMs / 1000);
     const minutosTotais = Math.floor(segundosTotais / 60);
     const horasTotais = Math.floor(minutosTotais / 60);
@@ -37,26 +30,18 @@ function atualizarContador() {
     let anos = agora.getFullYear() - dataInicioNamoro.getFullYear();
     let meses = agora.getMonth() - dataInicioNamoro.getMonth();
     let dias = agora.getDate() - dataInicioNamoro.getDate();
-
     if (dias < 0) {
         meses--;
-
         const diaNoMesAnterior = new Date(agora.getFullYear(), agora.getMonth(), 0).getDate();
         dias = diaNoMesAnterior + dias;
     }
-
     if (meses < 0) {
         anos--;
         meses += 12;
     }
-
-
     const segundos = segundosTotais % 60;
     const minutos = minutosTotais % 60;
     const horas = horasTotais % 24;
-
-
-
     anosSpan.textContent = formatarDoisDigitos(anos);
     mesesSpan.textContent = formatarDoisDigitos(meses);
     diasSpan.textContent = formatarDoisDigitos(dias);
@@ -64,8 +49,6 @@ function atualizarContador() {
     minutosSpan.textContent = formatarDoisDigitos(minutos);
     segundosSpan.textContent = formatarDoisDigitos(segundos);
 }
-
-
 atualizarContador();
 setInterval(atualizarContador, 1000);
 

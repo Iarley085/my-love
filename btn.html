@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa História!</title>
+    <title>Te amo meu amor ❤️</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -14,51 +14,108 @@
             align-items: center;
             min-height: 100vh;
             text-align: center;
+            background: linear-gradient(#6e3070, #80016f);
+            color: #333;
         }
-
         .content {
-            background-color: #ffe6e6;
+            background-color: #fa79f3; 
             padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 50px; 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             max-width: 800px;
             margin: 20px;
+            animation: fadeIn 2s ease-out; 
+            color: #4a4a4a; 
         }
 
+      
         .content h2 {
-            color: #d62828;
-            margin-bottom: 20px;
+            color: #e91e63; 
+            margin-bottom: 25px;
+            font-size: 2.5em;
         }
 
+        
         .content p {
             line-height: 1.6;
-            color: #555;
+            color: #4a4a4a; 
+            font-size: 1.2em;
+            margin-bottom: 15px;
         }
 
+        
+        .content .signature {
+            margin-top: 30px;
+            font-style: italic;
+            color: #777;
+            font-size: 1em;
+        }
+
+        
+        .heart-icon {
+            color: #e91e63;
+            font-size: 1.5em;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        
         .btn-voltar {
             margin-top: 30px;
             display: inline-block;
-            background-color: #4cb5f1;
+            background-color: #d62828; /* Cor vermelha do botão "Ver Mais!" */
             color: #fff;
-            padding: 10px 20px;
-            border-radius: 25px;
+            padding: 12px 25px;
+            border-radius: 30px;
             text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s ease;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .btn-voltar:hover {
-            background-color: #f802e4;
+            background-color: #e63946; /* Vermelho mais escuro no hover */
+            transform: translateY(-2px);
+        }
+
+        /* Animação de surgir */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Media queries para responsividade em telas menores */
+        @media (max-width: 480px) {
+            .content h2 {
+                font-size: 2em;
+            }
+            .content p {
+                font-size: 1em;
+            }
+            .content {
+                padding: 25px;
+                border-radius: 30px; /* Um pouco menos arredondado em telas pequenas */
+            }
+            .btn-voltar {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="content">
-        <h2>Nossa História e Momentos Especiais!</h2>
-        <p></p>
-        <p> 😊</p>
-        <a href="index.html" class="btn-voltar">Voltar para o Contador</a>
+        <h2>Para o Meu Amor, Thamyres!</h2>
+        <p>Desde o dia em que nossos caminhos se cruzaram, cada momento ao seu lado se tornou a parte mais preciosa da minha história. Não são apenas dias, meses ou anos que contamos, mas sim a infinidade de risadas, o conforto dos seus abraços e a certeza de que encontrei em você tudo o que eu sempre sonhei.</p>
+        <p>Você me inspira, me completa e me mostra o quanto o amor pode ser belo e transformador. Cada pequeno gesto, cada palavra sua, ilumina o meu dia e me faz ter a certeza de que a vida é muito mais incrível com você nela.</p>
+        <p>Obrigado por ser a pessoa maravilhosa que você é, por me amar, por me apoiar e por construir essa jornada linda comigo. Cada segundo ao seu lado é um presente que guardo no coração.</p>
+        <p><strong>Meu amor por você só cresce, a cada batida do meu coração.</strong> <span class="heart-icon">❤️</span></p>
+        <p class="signature">Com todo o amor,</p>
+        <p class="signature">Iarley</p>
+
+        <a href="index.html" class="btn-voltar">Voltar pras fotinhas</a>
     </div>
 </body>
 
